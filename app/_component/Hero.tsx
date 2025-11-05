@@ -77,7 +77,7 @@ const Hero = () => {
       <h1 className='text-2xl mt-2 text-gray-400 text-center p-5'>Generate, Edit and Explore desig with AI, Export code as well</h1>
       <div className="w-full max-w-2xl mt-3  border p-6 rounded-2xl">
      
-        <textarea id="ai" defaultValue={InputValue} onChange={(e)=>setInput(e.target.value)} placeholder='Describe your page design ' className='w-full max-w-2xl h-24  focus:outline-none focus:resize-none resize-none' name="" id=""/>
+        <textarea id="ai" defaultValue={InputValue} onChange={(e)=>setInput(e.target.value)} placeholder='Describe your page design ' className='w-full max-w-2xl h-24  focus:outline-none focus:resize-none resize-none' name=""/>
       <div className='flex justify-between items-center w-full'>
         <Button variant={"ghost"} className=''><ImagePlusIcon/></Button>
         {!user?( <SignInButton mode='modal'  forceRedirectUrl={"/workshop"}>
