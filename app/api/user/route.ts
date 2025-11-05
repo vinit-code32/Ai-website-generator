@@ -14,12 +14,11 @@ export const POST = async(req:NextRequest)=>{
 
     if(res?.length==0){
         let value = {
-            name:user?.fullName,
-            email:user?.primaryEmailAddress?.emailAddress,
+            name:user?.fullName as string,
+            email:user?.primaryEmailAddress?.emailAddress as string,
             creadit:2
         }
-     let insert=await db.insert(data).values({
-        ...value})
+     let insert=await db.insert(data).values({...value})
 
      return NextResponse.json(insert)
     }
