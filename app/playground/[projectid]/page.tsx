@@ -198,7 +198,7 @@ useEffect(() => {
   return (
     <div>
       <Header />
-      <div className="flex h-full">
+      <div className="sm:flex max-sm:flex-col h-full ">
         <ChatSessin
           message={messages}
           onSend={handleSubmit}

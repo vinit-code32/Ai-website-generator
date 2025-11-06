@@ -24,7 +24,7 @@ const Hearder = () => {
       <Image src={"/logo.svg"} alt='logo' height={30} width={30} className=' ' />
       <h1 className="text-xl font-bold">AI Website </h1>
       </div>
-      <div className="flex jus gap-2 item-center">{
+      <div className="sm:flex justify-center hidden gap-2 item-center ">{
         data.map((index,i)=>(
          <Link key={i} href={index.path}> <Button variant={"ghost"}>{index.name}</Button></Link>
         ))}
