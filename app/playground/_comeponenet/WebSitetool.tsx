@@ -104,7 +104,7 @@ console.log(farmeId);
 <Button onClick={ViewWebsite} variant={"ghost"}>View <ExternalLinkIcon/></Button>
 <CodeView code={finalCode}><Button>Code <Code/></Button></CodeView>
 
-<Button onClick={handleDownload}>Download <Download/></Button>
+<Button className="sm:flex max-sm:flex-col  items-center" onClick={handleDownload}>Download <Download/></Button>
       </div>
     </div>
   )
