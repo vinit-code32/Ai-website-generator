@@ -23,10 +23,10 @@ toast.success("copy successfully")
     <div>
       <Dialog>
         <DialogTrigger>{children}</DialogTrigger>
-        <DialogContent className='min-w-[1220px] max-h-[600px] overflow-y-scroll' >
+        <DialogContent className='min-w-[1220px] max-sm:min-w-[200px] max-h-[600px] overflow-y-scroll' >
           <DialogHeader>
             <DialogTitle className='flex items-center gap-3'>source Code <Button onClick={copySubmit}><Copy/></Button></DialogTitle>
-            <DialogDescription>
+            <DialogDescription className="max-sm:min-w-[200px]">
                 <SyntaxHighlighter  language="javascript" style={coldarkCold}>{code}</SyntaxHighlighter>
              
             </DialogDescription>

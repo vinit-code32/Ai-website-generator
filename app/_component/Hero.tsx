@@ -8,29 +8,30 @@ import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import {toast} from "sonner"
 import { ContainerTextFlipDemo } from './Word'
-let data = [{
-  name:"Dashboard",
-  icon:<LayoutDashboardIcon/>,
-  prompt:"create a dashboad website and make it more animatated"
-},
-{
-  name:"signUpForm",
-  icon:<Key/>,
-    prompt:"create a dashboad website and make it more animatated"
+let data =[
+  {
+    name: "Dashboard UI",
+    
+ icon:<LayoutDashboardIcon/>,
+    prompt: "Create a modern and responsive admin dashboard using Next.js, Tailwind CSS, and TypeScript. Include a sidebar with navigation links (Dashboard, Users, Analytics, Settings), a top navbar with a search bar and profile dropdown, and main content cards showing stats, charts, and recent activities. Use Framer Motion for smooth transitions and animations between pages."
+  },
+  {
+    name: "Signup Form",
+    icon:<Key/>,
+    prompt: "Design a sleek and accessible signup form using React, Tailwind CSS, and Framer Motion. Include fields for Full Name, Email, Password, and Confirm Password, with inline validation messages and a 'Create Account' button. Add subtle animations on focus and a link to redirect to the login page. Make it mobile-friendly and centered in the viewport with a clean UI."
+  },
+  {
+    name: "Hero Section",
+     icon:<HomeIcon/>,
+    prompt: "Build a visually appealing hero section for a landing page using Next.js and Tailwind CSS. Include a large headline, subtext paragraph, and two call-to-action buttons (e.g., 'Get Started' and 'Learn More'). Add a background gradient or minimal illustration and apply Framer Motion for text fade-in and button hover animations. Ensure the section is responsive and centered."
+  },
+  {
+    name: "User Profile Card",
+ icon:<User/>,
+    prompt: "Create a modern user profile card component using React and Tailwind CSS. The card should display the user's avatar, name, role, bio, and action buttons (Follow / Message). Include hover effects, rounded corners, and shadow. Optionally, animate it with Framer Motion for smooth hover scale effects. Keep the design clean and responsive."
+  }
+]
 
-},
-{
-  name:"Hero",
-  icon:<HomeIcon/>,
-    prompt:"create a dashboad website and make it more animatated"
-
-},
-{
-  name:"user profile Card",
-  icon:<User/>,
-    prompt:"create a dashboad website and make it more animatated"
-
-}]
 
 
 const Hero = () => {
