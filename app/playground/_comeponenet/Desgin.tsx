@@ -201,7 +201,7 @@ if (root) {
 
 }
     return (
-        <div className='w-full gap-1 flex '>
+        <div className='w-full gap-1 flex max-sm:flex-wrap'>
       <div className="w-full p-2 flex flex-col items-center">
         <iframe
             ref={iframeRef}
