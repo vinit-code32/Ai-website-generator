@@ -97,14 +97,14 @@ console.log(farmeId);
   return (
     <div className='p-2 w-full border rounded-b-xl flex justify-between items-center'>
       <div className='flex gap-2 items-center'>
-        <Button variant={"ghost"} className={`${screenSize=="Monitor"&&"border-2 border-black"}`} onClick={()=>setScreenSize("Monitor")}><Monitor/></Button>
-        <Button variant={"ghost"} className={`${screenSize=="smartPhone"&&"border-2 border-black"}`}  onClick={()=>setScreenSize("smartPhone")}><TabletSmartphone/></Button>
+        <Button variant={"ghost"} className={`${screenSize=="Monitor"&&"border-2 border-black"} max-sm:hidden block `} onClick={()=>setScreenSize("Monitor")}><Monitor/></Button>
+        <Button variant={"ghost"} className={`${screenSize=="smartPhone"&&"border-2 border-black"} max-sm:hidden block`}  onClick={()=>setScreenSize("smartPhone")}><TabletSmartphone/></Button>
       </div>
       <div className="flex gap-2 items-center justify-center">
 <Button onClick={ViewWebsite} variant={"ghost"}>View <ExternalLinkIcon/></Button>
 <CodeView code={finalCode}><Button>Code <Code/></Button></CodeView>
 
-<Button className="sm:flex max-sm:flex-col  items-center" onClick={handleDownload}>Download <Download/></Button>
+<Button  onClick={handleDownload}>Download <Download/></Button>
       </div>
     </div>
   )
