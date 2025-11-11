@@ -22,7 +22,7 @@ const Hearder = () => {
     <div className='px-4 mx-auto py-4 flex justify-between items-center shadow-2xl'>
       <div className="flex item-center gap-3 justify-center">
       <Image src={"/logo.svg"} alt='logo' height={30} width={30} className=' ' />
-      <h1 className="text-xl font-bold">AI Website </h1>
+      <h1 className="text-xl font-bold">BuilderX </h1>
       </div>
       <div className="sm:flex justify-center hidden gap-2 item-center ">{
         data.map((index,i)=>(
