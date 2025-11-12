@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "kwaipilot/kat-coder-pro:free",
+        model: "tngtech/deepseek-r1t2-chimera:free",
         messages,
         stream: true,
       },
