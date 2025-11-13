@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "z-ai/glm-4.5-air:free",
+        model: "minimax/minimax-m2",
         messages,
         stream: true,
       },
