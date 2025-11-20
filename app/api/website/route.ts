@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "openrouter/sherlock-dash-alpha",
+        model: "x-ai/grok-4.1-fast",
         messages,
         stream: true,
       },
