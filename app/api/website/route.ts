@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model: "upstage/solar-pro-3:free",
+        model:"arcee-ai/trinity-large-preview:free",
         messages,
         stream: true,
       },
