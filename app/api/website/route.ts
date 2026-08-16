@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model:"moonshotai/kimi-k2.5",
+        model:"openai/gpt-5.6-sol",
         messages,
         stream: true,
       },
