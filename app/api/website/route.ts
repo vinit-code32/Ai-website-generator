@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model:"inclusionai/ling-3.0-flash-sante:free",
+        model:"recraft/recraft-v4.1-flash",
         messages,
         stream: true,
       },
