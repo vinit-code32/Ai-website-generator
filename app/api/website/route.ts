@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model:"google/gemma-4-31b-it:free",
+        model:"dots-studio/dots-3-note-preview:free",
         messages,
         stream: true,
       },
