@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
     const response = await axios.post(
       "https://openrouter.ai/api/v1/chat/completions",
       {
-        model:"qwen/qwen3.8-27b:free",
+        model:"nvidia/nemotron-3.5-lightning:free",
         messages,
         stream: true,
       },
